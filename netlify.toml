@@ -1,0 +1,12 @@
+# Orbital is a plain static site (a single self-contained HTML file),
+# so there is no build step and the repository root is published as-is.
+[build]
+  publish = "."
+  command = ""
+
+# The page is named index-home.html rather than index.html, so serve it
+# at the site root without renaming the app's file.
+[[redirects]]
+  from = "/"
+  to = "/index-home.html"
+  status = 200
